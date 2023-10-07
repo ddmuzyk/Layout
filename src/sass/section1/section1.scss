@@ -1,0 +1,15 @@
+@import '../variables.scss', '../colors.scss';
+
+#section1 {
+  margin: 80px 0 0 $baseMargin1;
+}
+
+.section1-header {
+  font-size: 2.5rem;
+  line-height: 62px;
+}
+
+.subtitle1 {
+  font-size: 20px;
+  line-height: 30px;
+}
