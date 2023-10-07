@@ -22,6 +22,9 @@ nav {
   background: $purple;
   height: 80px;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 label.logo {
@@ -38,9 +41,6 @@ label.logo {
 }
 
 nav ul {
-  position: fixed;
-  top: 0;
-  right: 0;
   margin-right: $baseMargin1;
 }
 
@@ -66,7 +66,7 @@ a.active, a:hover {
 .checkbtn {
   font-size: 30px;
   color: white;
-  float: right;
+  // float: right;
   line-height: 80px;
   margin-right: 40px;
   height: 100%;
@@ -101,9 +101,12 @@ a.active, a:hover {
 }
 
 @media (max-width: 1199.98px) {
+
   .checkbtn {
     display: flex;
+    order: 2;
   }
+
   ul {
     position: fixed;
     width: 100%;
@@ -131,10 +134,6 @@ a.active, a:hover {
     color: #0082e6;
   }
 
-  #check:checked ~ ul {
-    left: 0;
-  }
-
   .logo-container {
     margin-left: $baseMargin2;
     width: 115px;
@@ -144,9 +143,3 @@ a.active, a:hover {
     margin-right: $baseMargin2;
   }
 }
-
-// @media (max-width: 600px) {
-//   #logo {
-//     width: 30p;
-//   }
-// }
