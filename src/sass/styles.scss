@@ -49,8 +49,8 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: #1b9bff;
   transition: all .5s;
+  background: #1b9bff;
 }
 
 .checkbtn {
@@ -70,6 +70,12 @@ a.active, a:hover {
 
 img {
   width: 60px
+}
+
+.menuOpen {
+  position: fixed;
+  top: 80px;
+  left: 0;
 }
 
 @media (max-width: 952px) {
