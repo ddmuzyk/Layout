@@ -11,9 +11,9 @@
 }
 
 .subtitle1 {
-  margin-left: 20px;
   font-size: 25px;
   line-height: 30px;
+  list-style-position: inside;
   font-weight: 100;
   color: $purple;
   &::marker {
@@ -25,4 +25,27 @@
   width: 810px;
   margin-top: 60px;
   line-height: 24px;
+}
+
+.section1-list-el {
+  display: flex;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+
+.section1-list li {
+  max-width: 900px;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 30px;
+  list-style: none;
+  &::marker {
+    color: $purple;
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+  
 }
