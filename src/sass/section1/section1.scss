@@ -5,11 +5,24 @@
 }
 
 .section1-header {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 62px;
+  margin-bottom: 15px;
 }
 
 .subtitle1 {
-  font-size: 20px;
+  margin-left: 20px;
+  font-size: 25px;
   line-height: 30px;
+  font-weight: 100;
+  color: $purple;
+  &::marker {
+    color: $purple;
+  }
+}
+
+.section1-p {
+  width: 810px;
+  margin-top: 60px;
+  line-height: 24px;
 }
