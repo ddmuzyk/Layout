@@ -60,7 +60,7 @@
 .section1-tiles {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 90px);
   grid-gap: 10px;
   margin-top: 40px;
   max-width: 900px;
@@ -70,6 +70,11 @@
   display: flex;
   background-color: rgb(247, 246, 246);
   border-radius: 3px;
+  align-items: center;
+}
+
+.section1-tile-img {
+  margin: 0 20px;
 }
 
 #section1-tile-1 {
