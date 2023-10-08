@@ -101,6 +101,8 @@
   display: flex;
   justify-content: center;
   margin-top: 150px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
   button {
     // width: 200px;
     // height: 50px;
@@ -110,7 +112,6 @@
     border-radius: 3px;
     font-family: Source Sans Pro, sans-serif;
     font-weight: 700;
-    margin-bottom: 100px;
     background-color: $purple;
     color: white;
     font-size: 18px;
@@ -121,5 +122,46 @@
       background-color: $navy;
       cursor: pointer;
     }
+  }
+
+  img {
+    width: 9px;
+    margin-left: 5px;
+  }
+}
+
+.sec22-img {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .section2-wrapper {
+    padding: 0 $baseMargin2;
+  }
+}
+
+@media (max-width: 810px) {
+  .section2-tiles {
+    justify-content: center;
+  }
+
+  .section2-tile {
+    width: 100%;
+  }
+
+  .section2-img-container {
+    height: auto;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .sec2-img {
+    display: none;
+  }
+
+  .sec22-img{
+    display: block;
   }
 }
