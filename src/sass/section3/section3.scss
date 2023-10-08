@@ -58,3 +58,29 @@
     font-weight: 200;
   }
 }
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  height: 210px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 2px;
+  font-family: 'Inter', sans-serif;
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
