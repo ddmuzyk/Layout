@@ -3,6 +3,8 @@
 footer {
   min-height: 50vh;
   margin: 0 $baseMargin1;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-logo-container {
@@ -65,3 +67,35 @@ footer {
     width: 10px;
   }
 }
+
+.hr-lines {
+
+  max-width: 500px;
+  margin: 100px auto;
+  position: relative;
+
+  &::before {
+    content:" ";
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    right: 120%;
+    background: $hr;
+  }
+
+  &::after {
+    content:" ";
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    background: $hr;
+  }
+}
+
