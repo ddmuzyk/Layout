@@ -148,7 +148,7 @@
   }
 
   .section1-content {
-    margin: 0 $baseMargin1;
+    margin: 0 $baseMargin1 100px $baseMargin1;
     max-width: calc(100% - #{$baseMargin1 * 2});
     width: max-content;
   }
@@ -170,7 +170,7 @@
 
 @media (max-width: 1199.98px) {
   .section1-content {
-    margin: 0 $baseMargin2;
+    margin: 0 $baseMargin2 100px $baseMargin2;
     max-width: calc(100% - #{$baseMargin2 * 2});
     width: max-content;
   }

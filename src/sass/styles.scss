@@ -89,7 +89,10 @@ nav ul li a {
 
 a.active, a:hover {
   transition: all .5s;
-  background: #1b9bff;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
 }
 
 .checkbtn {
@@ -166,12 +169,16 @@ a.active, a:hover {
     font-weight: 400;
     padding: 0;
     height: 100%;
+    &:hover {
+      text-decoration: none;
+      color: #0082e6;
+    }
   }
 
-  a:hover, a.active {
-    background: none;
-    color: #0082e6;
-  }
+  // a:hover, a.active {
+  //   background: none;
+  //   color: #0082e6;
+  // }
 
   .logo-container {
     margin-left: $baseMargin2;
@@ -186,6 +193,10 @@ a.active, a:hover {
 
   .menu-list-item {
     margin-left: 100px;
+  }
+
+  .fixed-img {
+    display: none;
   }
 }
 

@@ -3,7 +3,8 @@
 #section2 {
   background-color: rgb(238, 238, 238);
   padding-top: 100px;
-  margin: 0 ;
+  margin: 0;
+  min-height: 100vh;
 }
 
 .section2-wrapper {
@@ -15,7 +16,14 @@
     font-size: $sectionHeader1;
   }
 
+  ul {
+    margin-top: 16px;
+  }
+
   li {
     list-style-position: inside;
+    font-size: 25px;
+    color: $purple;
+    text-transform: uppercase;
   }
 }
