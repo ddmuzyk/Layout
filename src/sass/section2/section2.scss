@@ -92,7 +92,7 @@
   align-items: center;
   background-color: white;
   h3 {
-    padding: 0;
+    padding: 0 5px;
     font-size: 14px;
   }
 }
@@ -138,6 +138,12 @@
   .section2-wrapper {
     padding: 0 $baseMargin2;
   }
+
+  .h1-wrapper {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
 }
 
 @media (max-width: 810px) {
@@ -164,4 +170,38 @@
   .sec22-img{
     display: block;
   }
+
+  .section2-tile-title{
+    h3 {
+      font-size: 13px;
+    }
+  }
 }
+
+@media (max-width: 600px) {
+
+  .section2-wrapper {
+    padding: 0 $baseMargin3;
+  }
+
+  .section2-tile-title{
+    height: 60px;
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .h1-wrapper {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .section2-btn-container {
+    button {
+      padding: 20px 50px;
+      font-size: 16px;
+    }
+  }
+}
+  
