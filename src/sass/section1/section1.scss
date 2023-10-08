@@ -167,3 +167,20 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .section1-content {
+    margin: 0 $baseMargin2;
+    max-width: calc(100% - #{$baseMargin2 * 2});
+    width: max-content;
+  }
+
+  .section1-list-el {
+    font-size: 14px;
+  }
+
+  .section1-tiles {
+    display: flex;
+    flex-direction: column;
+  }
+}

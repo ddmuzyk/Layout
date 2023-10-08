@@ -64,6 +64,7 @@ nav ul li a {
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  display: block;
 }
 
 a.active, a:hover {
@@ -127,7 +128,8 @@ a.active, a:hover {
   nav ul li {
     display: block;
     margin: 0;
-    padding: 30px 0;
+    // padding: 30px 0;
+    height: 100px;
     text-align: left;
     line-height: 30px;
     cursor: pointer;
@@ -139,10 +141,15 @@ a.active, a:hover {
 
   nav ul li a {
     // font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     font-size: 20px;
     color: black;
     font-weight: 400;
-    margin-left: 100px;
+    padding: 0;
+    height: 100%;
+    // margin-left: 100px;
   }
 
   a:hover, a.active {
@@ -159,6 +166,10 @@ a.active, a:hover {
     position: fixed;
     top: 80px;
     left: 0;
+  }
+
+  .menu-list-item {
+    margin-left: 100px;
   }
 }
 
