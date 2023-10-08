@@ -1,0 +1,18 @@
+@import '../../sass/variables.scss';
+
+footer {
+  min-height: 50vh;
+  margin: 0 $baseMargin1;
+}
+
+.footer-logo-container {
+  img {
+    width: 454px;
+  }
+}
+
+.others {
+  img {
+    width: 36px;
+  }
+}
