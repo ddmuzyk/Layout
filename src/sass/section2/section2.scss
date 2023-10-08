@@ -85,7 +85,7 @@
 
 .section2-tile-title {
   text-transform: uppercase;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -94,5 +94,32 @@
   h3 {
     padding: 0;
     font-size: 14px;
+  }
+}
+
+.section2-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  button {
+    // width: 200px;
+    // height: 50px;
+    border-radius: 3px;
+    border: none;
+    padding: 30px 80px;
+    border-radius: 3px;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 700;
+    margin-bottom: 100px;
+    background-color: $purple;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: .2s ease;
+    &:hover {
+      background-color: $navy;
+      cursor: pointer;
+    }
   }
 }
