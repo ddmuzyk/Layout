@@ -33,6 +33,25 @@ nav {
   margin-bottom: 80px;
 }
 
+.fixed-img {
+  position: fixed;
+  top: 110px;
+  right: 30px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 15px 40px;
+  background-color: $purple;
+  color: white;
+  border: none;
+  transition: all .3s;
+  &:hover {
+    background-color: $navy;
+    cursor: pointer;
+  }
+}
+
 label.logo {
   color: $purple;
   background-color: rgb(48, 37, 37);

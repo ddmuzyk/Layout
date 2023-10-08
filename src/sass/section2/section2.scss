@@ -1,12 +1,21 @@
 @import '../../sass/variables.scss';
 
 #section2 {
-  background-color: rgb(240, 234, 234);
+  background-color: rgb(238, 238, 238);
   padding-top: 100px;
+  margin: 0 ;
+}
+
+.section2-wrapper {
+  padding: 0 $baseMargin1; ;
 }
 
 .h1-wrapper {
   h1 {
     font-size: $sectionHeader1;
+  }
+
+  li {
+    list-style-position: inside;
   }
 }
