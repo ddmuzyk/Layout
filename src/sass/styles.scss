@@ -20,17 +20,20 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
   background: $purple;
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 80px;
 }
 
 label.logo {
   color: $purple;
-  background-color: white;
+  background-color: rgb(48, 37, 37);
   font-size: 35px;
   line-height: 80px;
   padding: 7px 60px;

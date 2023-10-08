@@ -1,13 +1,25 @@
 @import '../variables.scss', '../colors.scss';
 
 #section1 {
+  display: flex;
   margin: 80px 0 0 $baseMargin1;
+  height: 1172px;
+  justify-content: space-between;
+  // width: 810px;
+}
+
+.section1-content {
+  box-sizing: border-box;
+  max-width: 810px;
+  width: 50vw;
+  margin-right: 30px;
 }
 
 .section1-header {
   font-size: 3rem;
   line-height: 62px;
   margin-bottom: 15px;
+  margin-top: 80px;
 }
 
 .subtitle1 {
@@ -22,7 +34,6 @@
 }
 
 .section1-p {
-  width: 810px;
   margin-top: 60px;
   line-height: 24px;
   margin-bottom: 40px;
@@ -36,9 +47,17 @@
   }
 }
 
+.section1-image1 {
+  max-width: 705px;
+  width: 38vw;
+}
+
+.section1-image2 {
+  display: none;
+}
+
 
 .section1-list li {
-  max-width: 900px;
   list-style-type: square;
   list-style-position: inside;
   line-height: 30px;
@@ -63,7 +82,8 @@
   grid-template-rows: repeat(4, 90px);
   grid-gap: 10px;
   margin-top: 40px;
-  max-width: 900px;
+  margin-bottom: 100px;
+  // max-width: 900px;
 }
 
 .section1-tile {
@@ -71,6 +91,10 @@
   background-color: rgb(247, 246, 246);
   border-radius: 3px;
   align-items: center;
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 
 .section1-tile-img {
@@ -115,4 +139,31 @@
 #section1-tile-8 {
   grid-column: 8 / 13;
   grid-row: 4;
+}
+
+@media (max-width: 1700px) {
+  #section1 {
+    flex-direction: column;
+    margin: 80px 0 0 0 ;
+  }
+
+  .section1-content {
+    margin: 0 $baseMargin1;
+    max-width: calc(100% - #{$baseMargin1 * 2});
+    width: max-content;
+  }
+
+  .section1-image1 {
+    display: none;
+  }
+
+  .section1-image2 {
+    display: block;
+    width: 100%;
+  }
+
+  .section1-tiles {
+    max-width: 100%;
+    width: 100%;
+  }
 }
