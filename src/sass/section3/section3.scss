@@ -1,0 +1,39 @@
+#section3 {
+  min-height: 100vh;
+}
+
+.section3-h1-wrapper {
+
+  padding: 100px $baseMargin1 0 $baseMargin1;
+
+  h1 {
+    font-size: $sectionHeader1;
+  }
+
+  ul {
+    margin-top: 16px;
+  }
+
+  li {
+    list-style-position: inside;
+    font-size: 25px;
+    color: $purple;
+    text-transform: uppercase;
+  } 
+}
+
+.section3-content {
+  margin: 0 $baseMargin1;
+}
+
+.numbers-container {
+  margin-top: 100px;
+  color: white;
+}
+
+.section3-wrapper {
+  height: 500px;
+  background-image: url('/public/png/blue-vert.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
