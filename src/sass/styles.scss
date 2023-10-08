@@ -31,6 +31,7 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 80px;
+  z-index: 100;
 }
 
 .fixed-img {
@@ -50,6 +51,7 @@ nav {
     background-color: $navy;
     cursor: pointer;
   }
+  z-index: 100;
 }
 
 label.logo {

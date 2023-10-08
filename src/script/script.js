@@ -9,9 +9,6 @@ const menu = document.getElementById('menu');
 const ul = document.querySelector('.sections-container');
 const togglers = document.querySelectorAll('.toggler');
 
-// Template for the menu source
-const menuTemplate = '/public/svg/';
-
 // Function to toggle the checkbox
 
 const toggleCheckbox = () => {
@@ -35,12 +32,12 @@ togglers.forEach(toggler => {
 });
 checkbox.addEventListener('click', toggleCheckbox);
 
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//       e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-//       document.querySelector(this.getAttribute('href')).scrollIntoView({
-//           behavior: 'smooth'
-//       });
-//   });
-// });
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
