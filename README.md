@@ -23,3 +23,4 @@ npm start
 * HTML
 * SCSS
 * JavaScript (Vanilla)
+* Parcel
