@@ -4,7 +4,7 @@ footer {
   min-height: 50vh;
   margin: 0 $baseMargin1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-logo-container {
@@ -78,17 +78,19 @@ footer {
 
 .hr-lines {
 
-  max-width: 500px;
+  width: 140px;
   margin: 50px auto;
   position: relative;
   color: $hr;
+  font-size: 15px;
+  text-align: center;
 
   &::before {
     content:" ";
     position: relative;
     display: block;
     height: 1px;
-    width: 200px;
+    width: 120%;
     position: absolute;
     top: 50%;
     right: 120%;
@@ -100,7 +102,7 @@ footer {
     position: relative;
     display: block;
     height: 1px;
-    width: 200px;
+    width: 120%;
     position: absolute;
     top: 50%;
     left: 120%;
@@ -122,5 +124,19 @@ footer {
       font-size: 14px;
       margin: 5px 70px 0 0 ;
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  footer {
+    margin: 0 $baseMargin2;
+  }
+}
+
+@media (max-width: 1258px) {
+  footer {
+    margin: 100px $baseMargin3 0 $baseMargin3;
+    flex-direction: column;
+    align-items: center;
   }
 }
