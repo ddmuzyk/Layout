@@ -192,3 +192,17 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .section1-tile {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .section1-content {
+    margin: 0 $baseMargin3 100px $baseMargin3;
+    max-width: calc(100% - #{$baseMargin3 * 2});
+    width: max-content;
+  }
+}
