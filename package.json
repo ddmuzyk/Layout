@@ -1,6 +1,8 @@
 {
     "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
