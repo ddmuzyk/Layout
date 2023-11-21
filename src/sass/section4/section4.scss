@@ -1,10 +1,10 @@
 @import '../../sass/variables.scss';
 
 footer {
-  min-height: 50vh;
+  height: 130px;
   margin: 0 $baseMargin1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-logo-container {
@@ -16,9 +16,9 @@ footer {
   width: max-content;
   gap: 20px;
 
-  img {
-    width: 454px;
-  }
+  // img {
+  //   width: 454px;
+  // }
 }
 
 .others {
@@ -37,7 +37,7 @@ footer {
   border-right: 0;
   border-top: 0;
   border-bottom: 0;
-  height: 50px;
+  height: 90%;
   // margin: 0 20px;
 }
 
@@ -132,18 +132,18 @@ footer {
   }
 }
 
-@media (max-width: 1400px) {
-  footer {
-    margin: 0 $baseMargin2;
-  }
-}
+// @media (max-width: 1400px) {
+//   footer {
+//     margin: 0 $baseMargin2;
+//   }
+// }
 
 @media (max-width: 1258px) {
-  footer {
-    margin: 100px $baseMargin3 0 $baseMargin3;
-    flex-direction: column;
-    align-items: center;
-  }
+  // footer {
+  //   margin: 100px $baseMargin3 0 $baseMargin3;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
 
   .footer-logo-container {
     width: 100%;
